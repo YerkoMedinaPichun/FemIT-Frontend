@@ -1,0 +1,6 @@
+@import "../../App.css";
+h1.logo {
+  font-size: 56px;
+  font-family: var(--fuente-titulo);
+  font-weight: 400;
+}

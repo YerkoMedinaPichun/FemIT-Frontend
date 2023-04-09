@@ -1,38 +1,75 @@
-.App {
-  text-align: center;
+:root {
+  --color-primary: #3b0b47;
+  --color-secondary: #c40061;
+  --color-tertiary: #640744;
+  --color-gris-01: #797979;
+  --color-gris-02: #999999;
+  --color-gris-03: #bfbfbf;
+  --color-gris-04: #dcdcdc;
+  --color-gris-05: #ececec;
+  --color-gris-06: #fafafa;
+  --color-gris-07: #f5f5f5;
+  --fuente-titulo: "Oswald", sans-serif;
+  --fuente-parrafo: "Roboto", sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.bg-color-primary {
+  background-color: var(--color-primary);
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.bg-color-secondary {
+  background-color: var(--color-secondary);
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.bg-color-tertiary {
+  background-color: var(--color-tertiary);
 }
-
-.App-link {
-  color: #61dafb;
+.bg-color-gris-01 {
+  background-color: var(--color-gris-01);
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.bg-color-gris-02 {
+  background-color: var(--color-gris-02);
+}
+.bg-color-gris-03 {
+  background-color: var(--color-gris-03);
+}
+.bg-color-gris-04 {
+  background-color: var(--color-gris-04);
+}
+.bg-color-gris-05 {
+  background-color: var(--color-gris-05);
+}
+.bg-color-gris-06 {
+  background-color: var(--color-gris-06);
+}
+.bg-color-gris-07 {
+  background-color: var(--color-gris-07);
+}
+.color-primary {
+  color: var(--color-primary);
+}
+.color-secondary {
+  color: var(--color-secondary);
+}
+.color-tertiary {
+  color: var(--color-tertiary);
+}
+.color-gris-01 {
+  color: var(--color-gris-01);
+}
+.color-gris-02 {
+  color: var(--color-gris-02);
+}
+.color-gris-03 {
+  color: var(--color-gris-03);
+}
+.color-gris-04 {
+  color: var(--color-gris-04);
+}
+.color-gris-05 {
+  color: var(--color-gris-05);
+}
+.color-gris-06 {
+  color: var(--color-gris-06);
+}
+.color-gris-07 {
+  color: var(--color-gris-07);
 }

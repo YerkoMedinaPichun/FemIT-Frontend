@@ -1,0 +1,14 @@
+.button {
+  font-size: 1.8rem;
+  padding: 1.6rem 3.2rem;
+  box-shadow: 0 5px 15px 0 #000;
+  border: 2px solid var(--color-secondary);
+  border-radius: 8px;
+  cursor: pointer;
+}
+.button.small {
+  padding: 1rem;
+}
+.button.big {
+  padding: 1.6rem 5.2rem;
+}
