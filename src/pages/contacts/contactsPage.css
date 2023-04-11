@@ -1,0 +1,127 @@
+.contenedor-contactos {
+	background-color: var(--color-gris-07);
+	border-radius: 8px;
+	border: 2px solid var(--color-gris-04);
+	width: 50rem;
+	margin: 4rem auto;
+	padding: 2rem;
+}
+
+.contactos-pendientes,
+.contactos {
+	border-bottom: 2px solid var(--color-gris-04);
+}
+
+.informacion {
+	/* background-color: red; */
+	height: 8rem;
+	/* background-color: red; */
+}
+.informacion .cantidad-contactos {
+	font-size: 2rem;
+	color: #222;
+	/* background-color: blue; */
+	height: 4rem;
+	display: flex;
+
+	align-items: center;
+}
+.informacion .combobox {
+	padding: 0.5rem 1rem;
+	font-size: 1.6rem;
+	border: 2px solid var(--color-gris-04);
+	color: #222;
+}
+
+.informacion .buscador {
+	width: 18rem;
+
+	padding: 0.5rem 1rem;
+	font-size: 1.6rem;
+
+	position: relative;
+	margin-left: 4.6rem;
+	outline: none;
+}
+.contactos-pendientes {
+	/* background-color: green; */
+	/* border-top: 2px solid var(--color-gris-04);
+	border-bottom: 2px solid var(--color-gris-04); */
+}
+
+.contactos {
+	/* background-color: blue; */
+	/* border-top: 2px solid var(--color-gris-04);
+	border-bottom: 2px solid var(--color-gris-04); */
+}
+.contacto {
+	/* background-color: red; */
+	display: grid;
+	grid-template-columns: 2fr 6fr 2fr;
+	height: 10rem;
+	margin: 2rem 0;
+	padding: 1rem 0;
+	/* border-top: 2px solid var(--color-gris-04);*/
+	border-bottom: 2px solid var(--color-gris-04);
+	gap: 1rem;
+}
+
+.contactos-pendientes .contacto:last-child,
+.contactos .contacto:last-child {
+	border: none;
+}
+
+.contacto .foto-contacto {
+	display: grid;
+	place-items: center;
+	/* background-color: var(--color-gris-04);
+	width: 7rem;
+	height: 7rem;
+	border-radius: 50%; */
+}
+.contacto .foto-contacto .foto {
+	background-color: var(--color-gris-04);
+	width: 7rem;
+	height: 7rem;
+	border-radius: 50%;
+}
+.contacto .informacion-contacto {
+	/* background-color: blue; */
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	color: #333;
+}
+
+.informacion-contacto .tiempo {
+	font-size: 1.4rem;
+}
+
+.contacto .acciones-contacto {
+	/* background-color: orange; */
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 1rem;
+}
+
+.acciones-contacto button {
+	width: 3.8rem;
+	height: 3.8rem;
+	font-size: 3.2rem;
+	display: grid;
+	place-items: center;
+	border-radius: 6px;
+	border: 2px solid var(--color-secondary);
+	box-shadow: 0 5px 15px 0 #000;
+	cursor: pointer;
+}
+
+.button-accept {
+	background-color: var(--color-secondary);
+	color: var(--color-gris-06);
+}
+
+.button-reject {
+	color: var(--color-secondary);
+}
