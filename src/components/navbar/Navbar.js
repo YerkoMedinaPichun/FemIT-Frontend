@@ -1,5 +1,5 @@
 import React from "react";
-import { Logo } from "../index";
+// import { Logo } from "../index";
 import "./navbar.css";
 import useMediaQuery from "../../hooks/useMediaQuery";
 const Navbar = ({ bgcolor, children }) => {

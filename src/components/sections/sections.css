@@ -1,0 +1,7 @@
+.container-sections {
+	/* background-color: red; */
+	display: flex;
+	justify-content: space-around;
+	width: 65rem;
+	/* padding: 1rem 3rem; */
+}
