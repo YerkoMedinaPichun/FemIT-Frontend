@@ -4,6 +4,7 @@ import Card from "./card/Card";
 import Comment from "./comment/Comment";
 import Footer from "./footer/Footer";
 import Form from "./form/Form";
+import FormRegister from "./form/FormRegister";
 import Image from "./image/Image";
 import Logo from "./logo/Logo";
 import Modal from "./modal/Modal";
@@ -19,6 +20,7 @@ export {
   Comment,
   Footer,
   Form,
+  FormRegister,
   Image,
   Logo,
   Modal,

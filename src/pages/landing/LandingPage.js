@@ -1,6 +1,8 @@
 import React from "react";
-import { Button, Navbar, Logo } from "../../components";
+import { Button, Navbar, Logo} from "../../components";
 import "./landingPage.css";
+import RegisterPage from "../register/RegisterPage";
+import { Link } from "react-router-dom";
 
 const LandingPage = () => {
   return (
@@ -26,13 +28,13 @@ const LandingPage = () => {
               cómo FemIT puede ayudarte a alcanzar tus metas profesionales y
               personales. ¡Te esperamos!
             </p>
-            <Button
-              color="color-gris-06"
-              bgcolor="bg-color-secondary"
-              size="big"
-            >
-              Crear Cuenta
-            </Button>
+          <Link to="/RegisterPage" 
+            
+             > <Button color="color-gris-06"
+             bgcolor="bg-color-secondary"
+             size="big">Crear Cuenta</Button>
+            </Link> 
+            
           </div>
           <div className="section-01-column-01"></div>
         </section>
