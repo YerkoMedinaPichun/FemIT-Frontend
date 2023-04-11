@@ -12,3 +12,9 @@
 .button.big {
   padding: 1.6rem 5.2rem;
 }
+
+.button:hover {
+  background-color: var(--color-gris-06);
+  color: var(--color-secondary);
+  transition: all ease 0.3s;
+}
