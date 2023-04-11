@@ -1,0 +1,19 @@
+.contenedor-logo-buscador {
+	display: flex;
+	justify-content: space-between;
+	align-items: baseline;
+
+	width: 40rem;
+	position: relative;
+}
+
+.contenedor-logo-buscador .buscador {
+	width: 18rem;
+
+	padding: 0.5rem 1rem;
+	font-size: 1.6rem;
+	position: relative;
+	bottom: 1rem;
+	margin-right: 1rem;
+	outline: none;
+}
