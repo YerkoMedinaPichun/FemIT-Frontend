@@ -10,10 +10,7 @@ const FormRegister = ({onSubmit}) => {
     const [password, setPassword] = useState('');
     const [confirPassword, setConfirPassword] = useState('');
 
-    const handleInputChange = (e) => {
-        e.preventDefault();
-        onSubmit({name,lastName1,lastName2,birthday,email,password,confirPassword});
-    }
+
 
   
     return (
