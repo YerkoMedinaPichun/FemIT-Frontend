@@ -1,7 +1,18 @@
 import React from "react";
 
 const ProfilePage = () => {
-  return <div>ProfilePage</div>;
+	return (
+		<>
+			<hero>
+				<section>
+					<img src="" alt="" />
+				</section>
+				<section>
+					<img src="" alt="" />
+				</section>
+			</hero>
+		</>
+	);
 };
 
 export default ProfilePage;
