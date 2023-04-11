@@ -1,6 +1,6 @@
 import React from "react";
 import { Navbar, Button, InfoPerfil, Portfolio } from "../../components";
-import { imagenPefil } from "./assets/imgs/perfil-usuaria.svg";
+import imagenPerfil from "./assets/imgs/profile-image.png";
 
 const ProfilePage = ({
 	nombre,
@@ -22,7 +22,7 @@ const ProfilePage = ({
 						<img src="" alt="" />
 					</section>
 					<section>
-						<img src={imagenPefil} alt="imagen perfil usuaria" />
+						<img src={imagenPerfil} alt="imagen perfil usuaria" />
 					</section>
 				</hero>
 				<main>
