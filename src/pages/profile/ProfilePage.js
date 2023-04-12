@@ -14,9 +14,9 @@ const ProfilePage = ({
 	return (
 		<>
 			<div>
-				<header>
+				<nav>
 					<Navbar />
-				</header>
+				</nav>
 				<hero>
 					<section>
 						<img src="" alt="" />
