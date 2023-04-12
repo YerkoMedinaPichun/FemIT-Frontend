@@ -1,5 +1,6 @@
 import React, {useState} from 'react'
 import Button from '../button/Button'
+import "./formRegister.css"
 
 const FormRegister = ({onSubmit}) => {
     const [name, setName] = useState('');
@@ -14,9 +15,9 @@ const FormRegister = ({onSubmit}) => {
 
   
     return (
-    <div>
-            <form class= "formBody">
-                <h2>¡Únete a FemIT!</h2>
+    <div class="form_body">
+        <form>
+            <h1>¡Únete a FemIT!</h1>
                 <div class="name">
                     <label for="inputNombre" class="form-label">
                     </label>
@@ -29,7 +30,7 @@ const FormRegister = ({onSubmit}) => {
                     onChange={(e)=> setName(e.target.value)}
                     />
                 </div>
-                <div class="apellido1">
+                <div class="lastName">
                     <label for="inputApellido" class="form-label">
                     </label>
                     <input 
@@ -41,7 +42,7 @@ const FormRegister = ({onSubmit}) => {
                     onChange={(e)=> setLastName1(e.target.value)}
                     />
                 </div>
-                <div class="apellido2">
+                <div class="lastName2">
                     <label for="inputApellido2" class="form-label">
                     </label>
                     <input 
@@ -53,18 +54,18 @@ const FormRegister = ({onSubmit}) => {
                     onChange={(e)=> setLastName2(e.target.value)}
                     />
                 </div>
-                <div class="fecha">
+                <div class="input">
                     <label for="inputFechaNacimiento" class="form-label">
                     </label>
                     <input 
                     type="date" 
-                    class="form-control" 
+                    class="date" 
                     id="FechaNacimiento" 
                     value={birthday}
                     onChange={(e)=> setbirthday(e.target.value)}
                     />
                 </div>
-                <div class="correo">
+                <div class="input">
                     <label for="inputCorreo" class="form-label">
                     </label>
                     <input 
@@ -76,7 +77,7 @@ const FormRegister = ({onSubmit}) => {
                     onChange={(e)=> setEmail(e.target.value)}            
                     />
                 </div>
-                <div class="contrasena">
+                <div class="input">
                     <label for="inputContraseña" class="form-label">
                     </label>
                     <input 
@@ -88,7 +89,7 @@ const FormRegister = ({onSubmit}) => {
                     onChange={(e)=> setPassword(e.target.value)}
                     />
                 </div>
-                <div class="confirContrasena">
+                <div class="input">
                     <label for="inputContraseñaConfirmacion" class="form-label">
                     </label>
                     <input
@@ -102,16 +103,25 @@ const FormRegister = ({onSubmit}) => {
                 </div>
 
                 <div class="btnAceptar">
-                    <input type="checkbox" class="form-check-input" id="exampleCheck1" />
+                    <input 
+                    type="checkbox" 
+                    class="form-check-input" 
+                    id="exampleCheck1" />
                     <label class="form-check-label" for="exampleCheck1">
-                    Acepto
+                    Acepto los terminos y condiciones.
                     </label>
                 </div>
-                <Button
-                    accion={"Registrarse"}
-                    type="submit"
-                    color={"btn btn-outline-dark"}
-                >Registrarse</Button>
+                
+                    <Button
+                        class="register" color="color-gris-06" bgcolor="bg-color-secondary" size="bid"
+                    >Crear cuenta</Button>
+                    <hr>
+                    </hr>
+                    <Button
+                        class="registerGoogel" color="color-gris-06" bgcolor="bg-color-secondary" size="big"
+                    >Registrate con Google
+                    </Button>
+                
             </form>
     </div>
   )
