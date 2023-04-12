@@ -1,5 +1,8 @@
 import React from "react";
 import "./section.css";
+
+// comentario
+
 const Section = ({ icono, children }) => {
 	return (
 		<>
