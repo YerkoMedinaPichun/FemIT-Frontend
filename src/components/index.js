@@ -11,6 +11,7 @@ import Navbar from "./navbar/Navbar";
 import Portfolio from "./portfolio/Portfolio";
 import Publication from "./publication/Publication";
 import Reactions from "./reactions/Reactions";
+import Carousel from "./carousel/Carousel";
 
 export {
   Banner,
@@ -26,4 +27,5 @@ export {
   Portfolio,
   Publication,
   Reactions,
+  Carousel,
 };
