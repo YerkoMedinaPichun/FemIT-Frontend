@@ -3,19 +3,18 @@ import React from "react";
 import "./navbar.css";
 import useMediaQuery from "../../hooks/useMediaQuery";
 const Navbar = ({ bgcolor, children }) => {
-  let isLargerThan375 = useMediaQuery("(min-width:375px)");
+	let isLargerThan375 = useMediaQuery("(min-width:375px)");
 
-  if (window.innerWidth >= 375) {
-    isLargerThan375 = true;
-  }
+	if (window.innerWidth >= 375) {
+		isLargerThan375 = true;
+	}
 
-  return (
-    <nav
-      className={`${isLargerThan375 ? "sm" : "xs"} navbar-landing ${bgcolor}`}
-    >
-      {children}
-    </nav>
-  );
+	return (
+		<nav
+			className={`${isLargerThan375 ? "sm" : "xs"} navbar-landing ${bgcolor}`}>
+			{children}
+		</nav>
+	);
 };
 
 export default Navbar;
