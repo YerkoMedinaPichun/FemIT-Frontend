@@ -4,6 +4,7 @@ import Card from "./card/Card";
 import Comment from "./comment/Comment";
 import Footer from "./footer/Footer";
 import Form from "./form/Form";
+import FormRegister from "./form/FormRegister";
 import Image from "./image/Image";
 import InfoCard from "./infoCard/InfoCard";
 import InfoPerfil from "./infoPerfil/InfoPerfil";
@@ -15,19 +16,20 @@ import Publication from "./publication/Publication";
 import Reactions from "./reactions/Reactions";
 
 export {
-	Banner,
-	Button,
-	Card,
-	Comment,
-	Footer,
-	Form,
-	Image,
-	InfoCard,
-	InfoPerfil,
-	Logo,
-	Modal,
-	Navbar,
-	Portfolio,
-	Publication,
-	Reactions,
+  Banner,
+  Button,
+  Card,
+  Comment,
+  Footer,
+  Form,
+  FormRegister,
+  Image,
+  InfoCard,
+  InfoPerfil,
+  Logo,
+  Modal,
+  Navbar,
+  Portfolio,
+  Publication,
+  Reactions,
 };
