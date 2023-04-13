@@ -45,7 +45,7 @@ form div {
 	transform: translate(-8px, -8px) scale(1.02);
 }
 
-h1 {
+.title-form {
 	color: white;
 	margin: 0 auto;
 	margin-bottom: var(--medium-3);
