@@ -14,7 +14,7 @@ const FormRegister = ({ onSubmit }) => {
 	return (
 		<div class="form_body">
 			<form>
-				<h1>¡Únete a FemIT!</h1>
+				<h1 class="title-form">¡Únete a FemIT!</h1>
 				<div class="name">
 					<label for="inputNombre" class="form-label"></label>
 					<input
