@@ -9,6 +9,9 @@ form {
 	efont-size: var(--medium-3);
 	display: grid;
 	background-color: var(--color-primary);
+	color: var(--color-primary);
+	font-weight: medium;
+	box-shadow: 0 4px 16px 0 #000;
 	width: var(--xl-8) * 2;
 	margin-top: var(--xl-5);
 	padding: var(--large-1);
@@ -16,6 +19,7 @@ form {
 	display: inline-block;
 	vertical-align: top;
 	border-radius: 16px;
+	font-family: var(--fuente-parrafo);
 }
 
 form div {
@@ -27,11 +31,18 @@ form div {
 	height: 32px;
 	padding: var(--small-3);
 	border-radius: 8px;
-	transition: 0.2 ease;
+	outline: none;
+	transition: transform 0.2s ease-in-out;
+	transform-origin: bottom-right;
+	font-weight: medium;
 }
 
-.form-control:hover {
-	transformation-scale: 1;
+.form-control:focus {
+	outline-color: var(--color-secondary);
+	outline-style: solid;
+	outline-width: 1px;
+	box-shadow: 0 0px 16px 0 var(--color-secondary);
+	transform: translate(-8px, -8px) scale(1.02);
 }
 
 h1 {
@@ -40,6 +51,7 @@ h1 {
 	margin-bottom: var(--medium-3);
 	text-align: center;
 	font-size: var(--large-1);
+	font-family: var(--fuente-titulo);
 }
 
 .name {
@@ -61,26 +73,29 @@ h1 {
 
 .date {
 	width: 50%;
-	border-radius: 5px;
+	border-radius: 8px;
+	font-family: var(--fuente-parrafo);
 }
 
 .btnAceptar {
 	color: white;
 	width: 100%;
-	padding: 5px;
+	padding: 8px;
 	font-size: 12px;
 }
 
 .form-check-label {
+	font-family: var(--fuente-parrafo);
 	margin: 8px;
 	text-decoration-line: underline;
 }
 
 Button {
+	font-family: var(--fuente-parrafo);
 	display: grid;
 	padding-bottom: 10px;
 	margin: 30px auto;
-	width: 90%;
+	width: 100%;
 	padding: auto;
 	text-align: center;
 }
