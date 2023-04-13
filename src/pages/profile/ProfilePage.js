@@ -1,5 +1,5 @@
 import React from "react";
-import { Navbar, Button, InfoPerfil, Portfolio } from "../../components";
+import { NavbarMenu, Button, InfoPerfil, Portfolio } from "../../components";
 import imagenPerfil from "./assets/imgs/profile-image.png";
 
 const ProfilePage = ({
@@ -15,7 +15,7 @@ const ProfilePage = ({
 		<>
 			<div>
 				<nav>
-					<Navbar />
+					<NavbarMenu />
 				</nav>
 				<hero>
 					<section>
