@@ -52,7 +52,7 @@ const FormRegister = ({ onSubmit }) => {
 					<label for="inputFechaNacimiento" class="form-label"></label>
 					<input
 						type="date"
-						class="date"
+						class="date form-control"
 						id="FechaNacimiento"
 						value={birthday}
 						onChange={(e) => setbirthday(e.target.value)}
