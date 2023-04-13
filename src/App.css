@@ -1,76 +1,106 @@
 :root {
-  --color-primary: #3b0b47;
-  --color-secondary: #c40061;
-  --color-tertiary: #640744;
-  --color-gris-01: #797979;
-  --color-gris-02: #999999;
-  --color-gris-03: #bfbfbf;
-  --color-gris-04: #dcdcdc;
-  --color-gris-05: #ececec;
-  --color-gris-06: #fafafa;
-  --color-gris-07: #f5f5f5;
-  --fuente-titulo: "Oswald", sans-serif;
-  --fuente-parrafo: "Roboto", sans-serif;
+	/* colors */
+	--color-primary: #3b0b47;
+	--color-secondary: #c40061;
+	--color-tertiary: #640744;
+	--color-gris-01: #797979;
+	--color-gris-02: #999999;
+	--color-gris-03: #bfbfbf;
+	--color-gris-04: #dcdcdc;
+	--color-gris-05: #ececec;
+	--color-gris-06: #fafafa;
+	--color-gris-07: #f5f5f5;
+
+	/* fonts */
+	--fuente-titulo: "Oswald", sans-serif;
+	--fuente-parrafo: "Roboto", sans-serif;
+
+	/* lenghts */
+	/*small lengths*/
+	--small-1: 1rem;
+	--small-2: 1.25rem;
+	--small-3: 1.5rem;
+
+	/*medium lengths*/
+	--medium-1: 2rem;
+	--medium-2: 2.25rem;
+	--medium-3: 2.5rem;
+
+	/*large lengths*/
+	--large-1: 3rem;
+	--large-2: 3.5rem;
+	--large-3: 4rem;
+	--large-4: 4.5rem;
+
+	/*XL lenght*/
+	--xl-1: 6rem;
+	--xl-2: 8rem;
+	--xl-3: 10rem;
+	--xl-4: 12rem;
+	--xl-5: 15rem;
+	--xl-6: 20rem;
+	--xl-7: 30rem;
+	--xl-8: 40rem;
 }
 
 .bg-color-primary {
-  background-color: var(--color-primary);
+	background-color: var(--color-primary);
 }
 .bg-color-secondary {
-  background-color: var(--color-secondary);
+	background-color: var(--color-secondary);
 }
 .bg-color-tertiary {
-  background-color: var(--color-tertiary);
+	background-color: var(--color-tertiary);
 }
 .bg-color-gris-01 {
-  background-color: var(--color-gris-01);
+	background-color: var(--color-gris-01);
 }
 .bg-color-gris-02 {
-  background-color: var(--color-gris-02);
+	background-color: var(--color-gris-02);
 }
 .bg-color-gris-03 {
-  background-color: var(--color-gris-03);
+	background-color: var(--color-gris-03);
 }
 .bg-color-gris-04 {
-  background-color: var(--color-gris-04);
+	background-color: var(--color-gris-04);
 }
 .bg-color-gris-05 {
-  background-color: var(--color-gris-05);
+	background-color: var(--color-gris-05);
 }
 .bg-color-gris-06 {
-  background-color: var(--color-gris-06);
+	background-color: var(--color-gris-06);
 }
 .bg-color-gris-07 {
-  background-color: var(--color-gris-07);
+	background-color: var(--color-gris-07);
 }
 
 .color-primary {
-  color: var(--color-primary);
+	color: var(--color-primary);
 }
 .color-secondary {
-  color: var(--color-secondary);
+	color: var(--color-secondary);
 }
 .color-tertiary {
-  color: var(--color-tertiary);
+	color: var(--color-tertiary);
 }
 .color-gris-01 {
-  color: var(--color-gris-01);
+	color: var(--color-gris-01);
 }
 .color-gris-02 {
-  color: var(--color-gris-02);
+	color: var(--color-gris-02);
 }
 .color-gris-03 {
-  color: var(--color-gris-03);
+	color: var(--color-gris-03);
 }
 .color-gris-04 {
-  color: var(--color-gris-04);
+	color: var(--color-gris-04);
 }
 .color-gris-05 {
-  color: var(--color-gris-05);
+	color: var(--color-gris-05);
 }
 .color-gris-06 {
-  color: var(--color-gris-06);
+	color: var(--color-gris-06);
 }
 .color-gris-07 {
-  color: var(--color-gris-07);
+	color: var(--color-gris-07);
 }
