@@ -11,6 +11,7 @@ import InfoPerfil from "./infoPerfil/InfoPerfil";
 import Logo from "./logo/Logo";
 import Modal from "./modal/Modal";
 import Navbar from "./navbar/Navbar";
+import NavbarLanding from "./navbar/NavbarLanding";
 import NavbarMenu from "./navbar/NavbarMenu";
 import Portfolio from "./portfolio/Portfolio";
 import Publication from "./publication/Publication";
@@ -31,6 +32,7 @@ export {
 	Logo,
 	Modal,
 	Navbar,
+	NavbarLanding,
 	NavbarMenu,
 	Portfolio,
 	Publication,

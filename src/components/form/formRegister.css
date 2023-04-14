@@ -5,8 +5,8 @@
 	width: 100%;
 }
 
-form {
-	efont-size: var(--medium-3);
+.form-register {
+	font-size: var(--medium-3);
 	display: grid;
 	background-color: var(--color-primary);
 	color: var(--color-primary);
@@ -22,7 +22,7 @@ form {
 	font-family: var(--fuente-parrafo);
 }
 
-form div {
+.form-register div {
 	margin: var(--small-3);
 }
 
@@ -59,10 +59,16 @@ form div {
 	position: relative;
 }
 
-.lastName {
+/* .lastName {
 	display: inline-block;
 	vertical-align: top;
 	width: 40%;
+} */
+
+.lastName {
+	display: inline-block;
+	vertical-align: top;
+	width: 90%;
 }
 
 .lastName2 {
@@ -72,7 +78,7 @@ form div {
 }
 
 .date {
-	width: 50%;
+	width: 100%;
 	border-radius: 8px;
 	font-family: var(--fuente-parrafo);
 }
@@ -90,7 +96,7 @@ form div {
 	text-decoration-line: underline;
 }
 
-Button {
+.button-register {
 	font-family: var(--fuente-parrafo);
 	display: grid;
 	padding-bottom: 10px;
@@ -98,4 +104,9 @@ Button {
 	width: 100%;
 	padding: auto;
 	text-align: center;
+
+	background-color: var(--color-secondary);
+	border: none;
+	color: var(--color-gris-06);
+	font-size: 1.8rem;
 }
