@@ -16,6 +16,7 @@ import Portfolio from "./portfolio/Portfolio";
 import Publication from "./publication/Publication";
 import Reactions from "./reactions/Reactions";
 import Carousel from "./carousel/Carousel";
+import FormLogin from "./form/FormLogin";
 
 export {
 	Banner,
@@ -36,4 +37,5 @@ export {
 	Publication,
 	Reactions,
 	Carousel,
+	FormLogin
 };
