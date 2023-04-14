@@ -120,6 +120,7 @@
 .button-accept {
 	background-color: var(--color-secondary);
 	color: var(--color-gris-06);
+	/*comentario*/
 }
 
 .button-reject {

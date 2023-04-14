@@ -9,17 +9,19 @@ import LoginPage from "./login/LoginPage";
 import MentorshipPage from "./mentorship/MentorshipPage";
 import ProfilePage from "./profile/ProfilePage";
 import RegisterPage from "./register/RegisterPage";
+import AdminPage from "./admin/AdminPage";
 
 export {
-  ContactsPage,
-  EducationPage,
-  ErrorPage,
-  HomePage,
-  InspirationPage,
-  JobsPage,
-  LandingPage,
-  LoginPage,
-  MentorshipPage,
-  ProfilePage,
-  RegisterPage,
+	ContactsPage,
+	EducationPage,
+	ErrorPage,
+	HomePage,
+	InspirationPage,
+	JobsPage,
+	LandingPage,
+	LoginPage,
+	MentorshipPage,
+	ProfilePage,
+	RegisterPage,
+	AdminPage,
 };

@@ -1,5 +1,5 @@
 import React from "react";
-import { Button, Navbar, Logo } from "../../components";
+import { Button, Navbar, Logo, NavbarLanding, Footer } from "../../components";
 import "./landingPage.css";
 import { ReactComponent as Ilustracion01 } from "./assets/ilustracion_01.svg";
 import { ReactComponent as Ilustracion02 } from "./assets/ilustracion_02.svg";
@@ -17,14 +17,7 @@ const LandingPage = () => {
 	return (
 		<>
 			<header>
-				<Navbar bgcolor="bg-color-primary">
-					<Logo color="color-gris-06" />
-					<Link to="/LoginPage">
-						<Button color="color-gris-06" bgcolor="bg-color-secondary">
-							Iniciar Sesión
-						</Button>
-					</Link>
-				</Navbar>
+				<NavbarLanding />
 			</header>
 			<main>
 				<section className={`section ${isLargerThan1020 ? "sm" : "xs"}`}>
@@ -43,7 +36,8 @@ const LandingPage = () => {
 							<Button
 								color="color-gris-06"
 								bgcolor="bg-color-secondary"
-								size="big">
+								size="big"
+							>
 								Crear Cuenta
 							</Button>
 						</Link>
@@ -82,11 +76,7 @@ const LandingPage = () => {
 					</div>
 				</section>
 			</main>
-			<footer>
-				<Navbar bgcolor="bg-color-gris-03">
-					<Logo color="color-primary" />
-				</Navbar>
-			</footer>
+			<Footer></Footer>
 		</>
 	);
 };
