@@ -18,6 +18,7 @@ import Publication from "./publication/Publication";
 import Reactions from "./reactions/Reactions";
 import Carousel from "./carousel/Carousel";
 import Table from "./table/Table";
+import FormLogin from "./form/FormLogin";
 
 export {
 	Banner,
@@ -40,4 +41,5 @@ export {
 	Reactions,
 	Carousel,
 	Table,
+	FormLogin,
 };

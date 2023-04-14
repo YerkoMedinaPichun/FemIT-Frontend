@@ -1,15 +1,14 @@
 import React from "react";
-import Navbar from "../navbar/Navbar";
 import Logo from "../logo/Logo";
+import "./footer.css";
 
 const Footer = () => {
-	return (
-		<footer>
-			<Navbar bgcolor="bg-color-gris-03">
-				<Logo color="color-primary" />
-			</Navbar>
-		</footer>
-	);
+  return (
+    <div className="footer-container">
+      <Logo />
+      <h4>© 2023</h4>
+    </div>
+  );
 };
 
 export default Footer;

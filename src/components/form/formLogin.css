@@ -1,0 +1,62 @@
+@import "../../App.css";
+
+.form-login-container {
+    width: 30%;
+    height: 50%;
+    background-color: var(--color-primary);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 2px;
+}
+
+.form-login-container h2 {
+    color: white;
+	font-size: var(--medium-3);
+	font-family: var(--fuente-titulo);
+    margin-bottom: 20px;
+}
+
+.form-login-container input {
+    width: 80%;
+    padding: 5px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.form-login-container a {
+    width: 80%;
+    color: var(--color-gris-02);
+    font-size: 12px;
+    margin-bottom: 30px;
+}
+
+.form-login-container a:hover {
+    text-decoration: underline;
+}
+
+.form-login-container button {
+    font-family: var(--fuente-parrafo);
+	width: 65%;
+    height: 40px;
+	text-align: center;
+	background-color: var(--color-secondary);
+	border: none;
+	color: var(--color-gris-06);
+	font-size: 1.2rem;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    box-shadow:  9px -5px 25px 0px rgba(0,0,0,0.46);
+    cursor: pointer;
+}
+
+.form-login-container button:hover {
+    background-color: var(--color-gris-06);
+    color: var(--color-secondary);
+}
+
+.form-login-container hr {
+    border: 0;
+	border-top: 1px solid #094CFA;
+}
