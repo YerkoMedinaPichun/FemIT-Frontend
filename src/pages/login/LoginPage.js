@@ -1,10 +1,11 @@
 import React from "react";
-import { Footer, FormLogin, Navbar } from "../../components";
+import { Footer, FormLogin, NavbarLanding } from "../../components";
+import "./login.css";
 
 const LoginPage = () => {
   return (
-    <div>
-      <Navbar />
+    <div className="login-container">
+      <NavbarLanding />
       <FormLogin />
       <Footer />
     </div>
