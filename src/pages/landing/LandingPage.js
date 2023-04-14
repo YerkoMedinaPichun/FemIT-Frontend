@@ -32,7 +32,7 @@ const LandingPage = () => {
 							cómo FemIT puede ayudarte a alcanzar tus metas profesionales y
 							personales. ¡Te esperamos!
 						</p>
-						<Link to="/RegisterPage">
+						<Link to="/AdminPage">
 							<Button
 								color="color-gris-06"
 								bgcolor="bg-color-secondary"

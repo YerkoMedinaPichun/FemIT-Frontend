@@ -9,37 +9,12 @@ const getAll = async () => {
 };
 
 const usuarioAdd = async (usuario) => {
-	/*
-    como debería venir la variable estudiante
-    {
-        estudiante_id:1,
-        nombre: "Pamela",
-        apellido: "Nahum"
-        equipo_id: 1
-    }
-    cuando AGREGAMOS un nuevo estudiante a la base, no debemos preocupar de que no venga el dato id,
-    ya que este se agrega de fomra automatica en la base de datos
-    entonces deberia venir así:
-    {
-        nombre: "Pamela",
-        apellido: "Nahum"
-        equipo_id: 1
-    }
-
-    */
-
 	const rest = await axios.post(baseURL + "/usuaria/save", usuario);
 	console.log(rest);
 	return rest.data;
 };
 
 const usuarioEdit = async (usuario) => {
-	/*const estu ={
-        estudiante_id:46,
-        nombre: "Pamela",
-        apellido: "Nahum",
-        equipo_id: 5
-    }*/
 	const rest = await axios.put(baseURL + "/usuaria/update", usuario);
 	console.log(rest);
 	return rest.data;

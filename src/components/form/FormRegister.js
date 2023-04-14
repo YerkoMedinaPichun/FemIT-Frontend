@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Button from "../button/Button";
 import "./formRegister.css";
 
@@ -19,7 +19,13 @@ const usuarioInit = {
 	rol_usuario: "",
 };
 
-const FormRegister = ({ agregarUsuario, onSubmit }) => {
+const FormRegister = ({
+	agregarUsuario,
+	usuarioEditado,
+	setUsuarioEditado,
+	editarUsuario,
+	onSubmit,
+}) => {
 	const [name, setName] = useState("");
 	const [lastName1, setLastName1] = useState("");
 	const [lastName2, setLastName2] = useState("");
@@ -31,6 +37,7 @@ const FormRegister = ({ agregarUsuario, onSubmit }) => {
 	const [usuario, setUsuario] = useState(usuarioInit);
 
 	const {
+		id_usuario,
 		nombre,
 		apellidos,
 		fecha_nacimiento,
@@ -46,10 +53,53 @@ const FormRegister = ({ agregarUsuario, onSubmit }) => {
 		setUsuario(handleFormValue);
 	};
 
+	useEffect(() => {
+		if (usuarioEditado !== null) {
+			setUsuario(usuarioEditado);
+		} else {
+			setUsuario({
+				id_usuario: 0,
+				nombre: "",
+				apellidos: "",
+				fecha_nacimiento: "",
+				correo_electronico: "",
+				contrasena: "",
+				foto_portada: "",
+				foto_perfil: "",
+				cargo: "",
+				estudios: "",
+				buscando_empleo: 0,
+				curriculum: "",
+				links: "",
+				rol_usuario: "",
+			});
+		}
+	}, [usuarioEditado]);
+
 	return (
 		<div class="form_body">
 			<div className="form-register">
 				<h1 class="title-form">¡Únete a FemIT!</h1>
+				{usuarioEditado !== null ? (
+					<div>
+						<label for="exampleFormControlInput1" class="form-label">
+							ID Usuario
+						</label>
+						<input
+							type="text"
+							class="form-control"
+							placeholder="ID"
+							id="id_usuario"
+							name="id_usuario"
+							value={id_usuario}
+							onChange={handleInputChange}
+							disabled
+						/>
+					</div>
+				) : (
+					<></>
+				)}
+
 				<div class="name">
 					<label for="inputNombre" class="form-label"></label>
 					<input
@@ -155,22 +205,42 @@ const FormRegister = ({ agregarUsuario, onSubmit }) => {
 					</label>
 				</div>
 
-				<button
+				{/* <button
 					className="button-register"
 					onClick={() => agregarUsuario(usuario)}
 				>
 					Crear cuenta
-				</button>
+				</button> */}
 
-				{/* <Button
-					class="register"
-					color="color-gris-06"
-					bgcolor="bg-color-secondary"
-					size="bid"
-					onClick={() => agregarUsuario(usuario)}
-				>
-					Crear cuenta
-				</Button> */}
+				{usuarioEditado !== null ? (
+					<div>
+						<button
+							type="button"
+							class="btn btn-success"
+							onClick={() => editarUsuario(usuario)}
+						>
+							Editar
+						</button>
+						<button
+							type="button"
+							class="btn btn-danger"
+							onClick={() => setUsuarioEditado(null)}
+						>
+							Cancelar
+						</button>
+					</div>
+				) : (
+					<Button
+						class="register"
+						color="color-gris-06"
+						bgcolor="bg-color-secondary"
+						size="bid"
+						onClick={() => agregarUsuario(usuario)}
+					>
+						Crear cuenta
+					</Button>
+				)}
+
 				{/* <hr></hr>
 				<Button
 					class="registerGoogel"

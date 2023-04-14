@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Footer, FormRegister, NavbarLanding } from "../../components";
+import { Footer, FormRegister, NavbarLanding, Table } from "../../components";
 import {
 	getAll,
 	usuarioAdd,
@@ -20,6 +20,17 @@ const AdminPage = () => {
 		obtenerUsuarios();
 	};
 
+	const editarUsuario = async (usuario) => {
+		await usuarioEdit(usuario);
+		obtenerUsuarios();
+		setUsuarioEditado(null);
+	};
+
+	const eliminarUsuario = async (id) => {
+		await usuarioDelete(id);
+		obtenerUsuarios();
+	};
+
 	useEffect(() => {
 		obtenerUsuarios();
 	}, []);
@@ -27,29 +38,18 @@ const AdminPage = () => {
 	return (
 		<>
 			<NavbarLanding />
-			<FormRegister agregarUsuario={agregarUsuario} />
+			<FormRegister
+				agregarUsuario={agregarUsuario}
+				usuarioEditado={usuarioEditado}
+				setUsuarioEditado={setUsuarioEditado}
+				editarUsuario={editarUsuario}
+			/>
+			<Table
+				usuario={usuario}
+				setUsuarioEditado={setUsuarioEditado}
+				eliminarUsuario={eliminarUsuario}
+			/>
 
-			{/* {usuario.map((u) => (
-				<p>{u.nombre}</p>
-			))} */}
-			<table>
-				<thead>
-					<th>Id</th>
-					<th>Nombre</th>
-					<th>Apellidos</th>
-					<th>Fecha de nacimiento</th>
-				</thead>
-				<tbody>
-					{usuario.map((u) => (
-						<tr>
-							<td>{u.id_usuario}</td>
-							<td>{u.nombre}</td>
-							<td>{u.apellidos}</td>
-							<td>{u.fecha_nacimiento}</td>
-						</tr>
-					))}
-				</tbody>
-			</table>
 			<Footer />
 		</>
 	);

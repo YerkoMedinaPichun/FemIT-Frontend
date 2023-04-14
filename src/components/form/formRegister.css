@@ -96,7 +96,7 @@
 	text-decoration-line: underline;
 }
 
-.button-register {
+.register {
 	font-family: var(--fuente-parrafo);
 	display: grid;
 	padding-bottom: 10px;
@@ -104,9 +104,10 @@
 	width: 100%;
 	padding: auto;
 	text-align: center;
+	margin: auto;
 
-	background-color: var(--color-secondary);
+	/* background-color: var(--color-secondary);
 	border: none;
 	color: var(--color-gris-06);
-	font-size: 1.8rem;
+	font-size: 1.8rem; */
 }
