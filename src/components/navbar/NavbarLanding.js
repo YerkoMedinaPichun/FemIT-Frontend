@@ -8,7 +8,9 @@ const NavbarLanding = () => {
 	return (
 		<Navbar bgcolor="bg-color-primary">
 			{/* <Logo color="color-gris-06" /> */}
-			<Logo />
+			<Link link to="/">
+				<Logo />
+			</Link>
 			<Link to="/LoginPage">
 				<Button color="color-gris-06" bgcolor="bg-color-secondary">
 					Iniciar Sesión

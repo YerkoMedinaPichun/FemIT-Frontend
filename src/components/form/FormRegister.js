@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 import Button from "../button/Button";
 import "./formRegister.css";
 
@@ -217,28 +218,27 @@ const FormRegister = ({
 						<button
 							type="button"
 							class="btn btn-success"
-							onClick={() => editarUsuario(usuario)}
-						>
+							onClick={() => editarUsuario(usuario)}>
 							Editar
 						</button>
 						<button
 							type="button"
 							class="btn btn-danger"
-							onClick={() => setUsuarioEditado(null)}
-						>
+							onClick={() => setUsuarioEditado(null)}>
 							Cancelar
 						</button>
 					</div>
 				) : (
-					<Button
-						class="register"
-						color="color-gris-06"
-						bgcolor="bg-color-secondary"
-						size="bid"
-						onClick={() => agregarUsuario(usuario)}
-					>
-						Crear cuenta
-					</Button>
+					<Link to="/LoginPage">
+						<Button
+							class="register"
+							color="color-gris-06"
+							bgcolor="bg-color-secondary"
+							size="bid"
+							onClick={() => agregarUsuario(usuario)}>
+							Crear cuenta
+						</Button>
+					</Link>
 				)}
 
 				{/* <hr></hr>
